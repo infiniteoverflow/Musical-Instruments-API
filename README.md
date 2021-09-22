@@ -1,7 +1,9 @@
+![](screenshot.png)
+
 A server app built using [Shelf](https://pub.dev/packages/shelf),
 configured to enable running with [Docker](https://www.docker.com/).
 
-This sample code handles HTTP GET requests to `/` and `/echo/<message>`
+This sample code handles HTTP GET requests to `/` and returns a JSON response from a local file.
 
 # Running the sample
 
@@ -47,3 +49,10 @@ You should see the logging printed in the first terminal:
 2021-05-06T15:47:04.620417  0:00:00.000158 GET     [200] /
 2021-05-06T15:47:08.392928  0:00:00.001216 GET     [200] /echo/I_love_Dart
 ```
+
+## So how does it work ?
+
+The dart code reads data from the json file located inside the `bin` folder, and sends the same as the server response.
+
+Note: Only GET works for the API. ie, if you are testing the API on any API Testing Tools like Postman using any HTTP methods other than GET, you may receive the default response only.
+
