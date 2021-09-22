@@ -67,11 +67,11 @@ Note: Only GET works for the API. ie, if you are testing the API on any API Test
         <th> What does it do? </th>
     </tr>
     <tr>
-        <td> offset <td>
+        <td> offset </td>
         <td> The amount of data entries that should be skipped </td>
     </tr>
     <tr>
-        <td> pageSize <td>
+        <td> pageSize </td>
         <td> Total amount of entries to be shown </td>
     </tr>
 </table>
