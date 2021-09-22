@@ -22,7 +22,7 @@ class ResponseModel {
 
 // Configure routes.
 final _router = Router()
-  ..get('/', (Request req)=> Response.ok('Homepage'))
+  ..get('/', (Request req)=> Response.ok('Hello World !'))
   ..get('/api', _rootHandler)
   ..get('/echo/<message>', _echoHandler);
 
