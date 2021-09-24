@@ -61,7 +61,7 @@ Response _echoHandler(Request request) {
 
 void main(List<String> args) async {
   // Use any available host or container IP (usually `0.0.0.0`).
-  final ip = InternetAddress.anyIPv4;
+  final ip = '0.0.0.0';
 
   // Configure a pipeline that logs requests.
   final _handler = Pipeline().addMiddleware(logRequests()).addHandler(_router);
